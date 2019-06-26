@@ -27,8 +27,26 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        baseUrl: 'journeyonlinefood.wordpress.com',
+        protocol: "https",
+        hostingWPCOM: true,
+        useACF: false,
+        auth: {
+          wpcom_app_clientSecret: process.env.WORDPRESS_SECRET,
+          wpcom_app_clientId: process.env.WORDPRESS_CLIENTID,
+          wpcom_user: process.env.WORDPRESS_USER,
+          wpcom_pass: process.env.WORDPRESS_PASSWORD,
+        },
+        verboseOutput: false,
+        searchAndReplaceContentUrls: {
+          sourceUrl: 'https://journeyonlinefood.wordpress.com',
+          replacementUrl: 'https://journeyonlinefood.wordpress.com',
+        },
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }

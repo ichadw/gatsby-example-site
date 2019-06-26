@@ -90,8 +90,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+## 💫 Deploy Status
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8f1c9c10-a1cf-4333-97e8-c6a2b07c4ad9/deploy-status)](https://app.netlify.com/sites/gatsby-toped/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
