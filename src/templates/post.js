@@ -3,7 +3,7 @@ import PropType from "prop-types"
 import Helmet from "react-helmet"
 import Img from "gatsby-image"
 import { graphql, Link } from "gatsby"
-
+import Image from "../components/image"
 import Layout from "../components/layout"
 
 // const stripHtml = (html) => {
@@ -73,14 +73,10 @@ const PostTemplate = props => {
                     />
                   </div>
                   <div className="author-avatar">
-                    <img
-                      alt=""
-                      src={post.author.avatar_urls.wordpress_48}
-                      className="img-circle"
-                    />
+                  <Image />
                   </div>
                   <div className="author-name">
-                    <h3>{post.author.name}</h3>
+                    <h3>{`{author_name}`}</h3>
                   </div>
                   <div className="row blog-info">
                     <div className="col-xs-12 col-sm-6">
