@@ -13,10 +13,6 @@ const Blog = () => (
               date(formatString: "DD, MMM YYYY")
               title
               excerpt
-              categories {
-                id
-                name
-              }
               jetpack_related_posts {
                 img {
                   alt_text

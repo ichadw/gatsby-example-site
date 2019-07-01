@@ -27,7 +27,7 @@ const PostTemplate = props => {
       <article>
         <header>
           <div className="background-bar">
-            {post.featured_media && (
+            {/* {post.featured_media && (
               <Img
                 src={post.featured_media.localFile.childImageSharp.sizes.src}
                 sizes={post.featured_media.localFile.childImageSharp.sizes}
@@ -35,7 +35,7 @@ const PostTemplate = props => {
                 alt={post.title}
               />
             )}
-            <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+            <h1 dangerouslySetInnerHTML={{ __html: post.title }} /> */}
           </div>
         </header>
         <section className="container-fluid main-body">
@@ -117,10 +117,6 @@ export const pageQuery = graphql`
       content
       excerpt
       date(formatString: "DD, MMM YYYY")
-      categories {
-        id
-        name
-      }
       slug
     }
   }
